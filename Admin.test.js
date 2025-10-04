@@ -39,11 +39,3 @@ test('test that appointments are scheduled for available doctors', () => {
   },
 ]);
 });
-
-
-
-
-
-
-
-
