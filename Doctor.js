@@ -4,6 +4,7 @@ class Doctor{
     department;
     contact;
     status;
+    appointment;
     constructor (name, department, contact){
         this.name = name;
         this.department = department
@@ -12,6 +13,7 @@ class Doctor{
         Doctor.registeredDoctors.push(this);
     }
 
+    
     isAvailable(){
         if (this.status == true)
             this.status == false;

@@ -1,4 +1,4 @@
-const{Appointment} = require('../Class Work/Appointment');
+const{Appointment} = require('../HealthApp_JavaScript/Appointment');
 
 
 test('test that the date for appointment is set ', () => {
@@ -8,5 +8,5 @@ test('test that the date for appointment is set ', () => {
 
 test('test that the time for appointment is set', () => {
     let appointment = new Appointment(2025, 11, 23, 9, 30, 0);
-    expect(appointment.getAppointmentTime()).toBe("9:30:00 AMnpm");
+    expect(appointment.getAppointmentTime()).toBe("9:30:00 AM");
 });

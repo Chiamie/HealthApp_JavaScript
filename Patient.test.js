@@ -1,4 +1,4 @@
-const {Patient} = require('../Class Work/Patient');
+const {Patient} = require('../HealthApp_JavaScript/Patient');
 
 describe('Test that object of the class can be initialized through constructor', () => {
     test('test that the constructor can be used to intitilized an object', () => {
