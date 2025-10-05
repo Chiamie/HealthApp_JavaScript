@@ -4,7 +4,7 @@ class Doctor{
     department;
     contact;
     status;
-    appointment;
+    appointment = [];
     constructor (name, department, contact){
         this.name = name;
         this.department = department
@@ -13,11 +13,12 @@ class Doctor{
         Doctor.registeredDoctors.push(this);
     }
 
-    
+    toggleAvailability() {
+        this.status = !this.status;
+    }
+
     isAvailable(){
-        if (this.status == true)
-            this.status == false;
-        this.status == true;
+        return this.status;
     }
 
     getName() {

@@ -1,14 +1,21 @@
+const { Doctor } = require("./Doctor");
+
 class Patient{
     name;
     age;
     contact;
     reasons = [];
+    appointments = [];
     constructor (name, age, contact, reason){
         this.name = name;
         this.age = age
         this.contact = contact;
         this.reasons.push(reason);
     }
+
+    /*assignDoctor(doctor) {
+        this.appointment.push(doctor.appointment);
+    }*/
 
     getReasons() {
         return this.reasons[this.reasons.length - 1];

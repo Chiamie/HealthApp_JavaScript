@@ -1,7 +1,8 @@
 const {Patient} = require('../HealthApp_JavaScript/Patient');
+const { Doctor } = require('./Doctor');
 
 describe('Test that object of the class can be initialized through constructor', () => {
-    test('test that the constructor can be used to intitilized an object', () => {
+    test('test that the constructor can be used to intitialize an object', () => {
         let patient = new Patient("John Smith", "25", "08765432", "Having fever");
         expect(patient).toBeInstanceOf(Patient);
         expect(patient.name).toBe("John Smith");
@@ -42,6 +43,7 @@ describe('Test that object of the class can be initialized through constructor',
         Patient.clear();
     });
 
+    
     
 
    

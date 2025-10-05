@@ -39,8 +39,12 @@ describe('Test that object of the class can be initialized through constructor',
         let doctor2 = new Doctor("John Abraham", "Radiography", "087634432");
         let doctor3 = new Doctor("Alex Smith", "Gynaecology", "0876543200")
         
-        expect(Doctor.getRegisteredDoctor()).toEqual([{"contact": "08765432", "department": "Oncology", "name": "John Smith", "status": true}, {"contact": "087634432", "department": "Radiography", "name": "John Abraham", "status": true}, {"contact": "0876543200", "department": "Gynaecology", "name": "Alex Smith", "status": true}]);
         
+        expect(Doctor.getRegisteredDoctor()).toEqual([ {contact: "08765432", department: "Oncology", name: "John Smith", status: true, appointment: [], },
+        { contact: "087634432", department: "Radiography", name: "John Abraham", status: true, appointment: [], },
+        { contact: "0876543200", department: "Gynaecology", name: "Alex Smith", status: true, appointment: [], },
+        ]);
+
     });
 
 
